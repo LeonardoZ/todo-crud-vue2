@@ -1,0 +1,40 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Wake Up",
+      "description": "I just need to get of my bed",
+      "done": false
+    },
+    {
+        "id": 2,
+        "title": "Take a shower",
+        "description": "To rly wake up",
+        "done": false
+    },
+    {
+        "id": 3,
+        "title": "Change cloths",
+        "description": "A nice shirt, pants and my All Star",
+        "done": false
+    },
+    {
+      "id": 4,
+      "title": "Breakfast",
+      "description": "Eggs with bacon!",
+      "done": false
+    },
+    {
+      "id": 5,
+      "title": "Pets Feeding",
+      "description": "Remember to feed Bob, the fish",
+      "done": false
+    },
+    {
+      "id": 6,
+      "title": "Ready",
+      "description": "Now i'm to do whateaver I want",
+      "done": false
+    }
+  ]
+}
