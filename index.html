@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>todo-crud</title>
+    <script type="text/javascript" src="/dist/bsconfig.js"></script>
   </head>
   <body>
-    <nav class="nav navbar-inverse">
+    <nav class="nav navbar-default">
       <div class="navbar-brand">
-        TODO LIST WITH VUE
+        <strong>TODO LIST</strong>
       </div>
     </nav>
     <div id="app" class="container">
-      <div class="well">
-    	 <router-view></router-view>
+      <div class="well" style="margin-top: 60px">
+       <router-view></router-view>
       </div>
     </div>
     <script src="/dist/build.js"></script>

@@ -2,7 +2,7 @@
 	<div id="todo-list-page">
 		<h1>TO-DO List</h1>
 		<div>
-			<h4>Add new TODO</h4>
+			<p class="text-muted">Add new TODO</p>
 			<div class="form-inline">
 				<div class="form-group">
 					<label>Title</label>
@@ -12,9 +12,9 @@
 					<label>Description</label>
 					<input class="form-control" v-model="actualTodo.description" />
 				</div>
-				<button class="btn btn-primary" v-if="updateMode == false" v-on:click="save">Add</button>
-				<button class="btn btn-primary" v-if="updateMode == true" v-on:click="update">Update</button>
-				<button class="btn btn-danger"  v-on:click="save">Cancel</button>
+				<button class="btn btn-primary" v-if="!updateMode" v-on:click="save">Add</button>
+				<button class="btn btn-primary" v-if="updateMode" v-on:click="update">Update</button>
+				<button class="btn btn-danger" v-on:click="cancel">Cancel</button>
 			</div>
 		</div>
 
@@ -23,8 +23,7 @@
 			<todo-item v-for="todo in todos" 
 				:todo="todo" :key="todo.id" 
 				v-on:update-todo="wantUpdateATodo"
-				v-on:todo-removed="removeATodo"
-				/>
+				v-on:todo-removed="removeATodo"/>
 		</ul>
 	</div>
 </template>
@@ -60,6 +59,10 @@
 				if (index > -1) {
 				    this.todos.splice(index, 1);
 				}
+			},
+			cancel: function (evt) {
+				this.actualTodo = new Todo()
+				this.updateMode = false
 			},
 			save: function (evt) {
 				let lastId = this.todos[this.todos.length - 1].id;

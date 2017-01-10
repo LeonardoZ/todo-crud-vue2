@@ -47,7 +47,7 @@
 				 (error) => console.log(error))
 			},
 			updateContent: function(evt) {
-				this.$emit("update-todo", this.todo );
+				this.$emit("update-todo", this.todo.id);
 			},
 			removeTodo: function(evt) {
 				todoApi.remove(this.todo,

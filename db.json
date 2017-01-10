@@ -7,16 +7,16 @@
       "done": false
     },
     {
-        "id": 2,
-        "title": "Take a shower",
-        "description": "To rly wake up",
-        "done": false
+      "id": 2,
+      "title": "Take a shower",
+      "description": "To rly wake up",
+      "done": false
     },
     {
-        "id": 3,
-        "title": "Change cloths",
-        "description": "A nice shirt, pants and my All Star",
-        "done": false
+      "id": 3,
+      "title": "Change cloths",
+      "description": "A nice shirt, pants and my All Star",
+      "done": false
     },
     {
       "id": 4,
